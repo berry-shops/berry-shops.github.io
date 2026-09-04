@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Berry Shops</title>
+<style>
+  :root{
+    --bg:#f4f8f8; --surface:#ffffff; --surface-2:#eaf2f3;
+    --ink:#182223; --muted:#586468; --faint:#8b979b;
+    --line:#e4ebec; --line-strong:#d0dadb;
+    --accent:#0e93b8; --accent-deep:#0a7495; --accent-soft:#e6f4f8;
+    --radius:14px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#0d1415; --surface:#141d1f; --surface-2:#1a2527; --ink:#e7eff0; --muted:#98a6aa; --faint:#6c7a7e;
+      --line:#233032; --line-strong:#314245; --accent:#37c1e4; --accent-deep:#79d7f1; --accent-soft:#123039;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0d1415; --surface:#141d1f; --surface-2:#1a2527; --ink:#e7eff0; --muted:#98a6aa; --faint:#6c7a7e;
+    --line:#233032; --line-strong:#314245; --accent:#37c1e4; --accent-deep:#79d7f1; --accent-soft:#123039;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:16.5px; line-height:1.6; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:720px; margin:0 auto; padding:0 22px 88px}
+  header{padding:52px 0 22px}
+  .eyebrow{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12px;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--accent-deep); font-weight:600; margin:0 0 12px}
+  h1{font-size:clamp(28px,5vw,36px); letter-spacing:-.02em; margin:0 0 10px; font-weight:800; text-wrap:balance}
+  .lede{color:var(--muted); font-size:17px; margin:0; max-width:60ch}
+
+  .contact{display:flex; flex-wrap:wrap; gap:12px; margin:26px 0 6px}
+  .contact a{flex:1; min-width:220px; display:block; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--line-strong); border-radius:var(--radius);
+    padding:16px 18px; transition:border-color .18s ease}
+  .contact a:hover{border-color:var(--accent)}
+  .contact .k{font-family:ui-monospace,Menlo,monospace; font-size:11px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--faint); margin:0 0 4px}
+  .contact .v{font-size:17px; font-weight:700; color:var(--accent-deep); margin:0}
+  .contact .s{font-size:13px; color:var(--muted); margin:4px 0 0}
+
+  h2.sec{font-size:21px; margin:42px 0 14px; font-weight:750; letter-spacing:-.01em}
+  details{background:var(--surface); border:1px solid var(--line); border-radius:12px;
+    margin:9px 0; padding:2px 4px; overflow:hidden}
+  details[open]{border-color:var(--line-strong)}
+  summary{cursor:pointer; list-style:none; padding:14px 16px; font-weight:650; font-size:16px;
+    display:flex; justify-content:space-between; align-items:center; gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+"; color:var(--accent); font-weight:700; font-size:20px; line-height:1; flex:0 0 auto}
+  details[open] summary::after{content:"–"}
+  summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:8px}
+  .ans{padding:0 16px 15px; color:var(--muted); font-size:15.5px}
+  .ans p{margin:8px 0}
+  .ans strong{color:var(--ink)}
+  a.link{color:var(--accent-deep); text-decoration:none; border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+  a.link:hover{border-bottom-color:var(--accent)}
+  footer{margin-top:48px; padding-top:22px; border-top:1px solid var(--line); color:var(--faint); font-size:13px}
+  footer a{color:var(--accent-deep)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Berry Shops · Support</p>
+    <h1>Help &amp; Support</h1>
+    <p class="lede">Answers to common questions about Berry Shops — your wallet for gift cards, coupons, and receipts. If you don't find what you need, email us and we'll help.</p>
+  </header>
+
+  <div class="contact">
+    <a href="mailto:support@berry-shops.com">
+      <p class="k">Email support</p>
+      <p class="v">support@berry-shops.com</p>
+      <p class="s">We aim to reply within 1–2 business days.</p>
+    </a>
+    <a href="privacy-policy.html">
+      <p class="k">Privacy</p>
+      <p class="v">Privacy Policy →</p>
+      <p class="s">How your data is handled (short answer: it stays with you).</p>
+    </a>
+  </div>
+
+  <h2 class="sec">Cards &amp; coupons</h2>
+
+  <details>
+    <summary>How do I add a gift card?</summary>
+    <div class="ans">
+      <p>Tap the <strong>＋</strong> button and choose <strong>Add Card</strong>. You can scan the card's barcode or QR code with your camera, or type in the store, card number, PIN, and balance by hand. The App fills in the store's brand and logo automatically where it can.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I add a coupon?</summary>
+    <div class="ans">
+      <p>Coupons live on their own page — swipe over to it, then add a coupon the same way you add a card. Coupons show the store's brand mark too, so they're easy to spot when you're checking out.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Scanning isn't reading my card. What can I do?</summary>
+    <div class="ans">
+      <p>Make sure the camera has good, even lighting and the barcode or number is flat and in focus. If a scan doesn't catch, you can always type the details in manually. If the camera doesn't activate at all, check <strong>Settings → Berry Shops → Camera</strong> is enabled.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How are my cards organized?</summary>
+    <div class="ans">
+      <p>Your wallet is split into pages — <strong>gift cards</strong>, <strong>coupons</strong>, and <strong>receipts</strong> — that you swipe between. With the Nearby feature on, cards for stores close to you rise to the top so the right one is ready when you walk in.</p>
+    </div>
+  </details>
+
+  <h2 class="sec">At checkout</h2>
+
+  <details>
+    <summary>How do I show a card to the cashier?</summary>
+    <div class="ans">
+      <p>Tap a card to flip it to a <strong>full-screen barcode view</strong> — large and bright so the register can scan it easily. Tap again or tap <strong>Done</strong> to flip back.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I copy the card number or PIN?</summary>
+    <div class="ans">
+      <p>On the back of a card, tap the <strong>copy icon</strong> next to the card number or PIN. It's copied to your clipboard so you can paste it into a store's website or checkout field — handy for online orders.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do balances work? Can the app check my balance automatically?</summary>
+    <div class="ans">
+      <p>You can update a card's balance yourself anytime, and it's saved with the card. For many stores, the App can open the store's <strong>official balance-check page</strong> to help you look it up. Balances stay in sync across your devices through iCloud.</p>
+    </div>
+  </details>
+
+  <h2 class="sec">Deals &amp; the sale ribbon</h2>
+
+  <details>
+    <summary>What is the moving ribbon at the bottom of a card?</summary>
+    <div class="ans">
+      <p>When a store has a current sale or clearance, the App shows a scrolling <strong>deals ribbon</strong> along the bottom of the card's barcode view. It's a quick heads-up that there's a promotion worth knowing about before you spend the card.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What happens when I tap the ribbon?</summary>
+    <div class="ans">
+      <p>Tapping the ribbon opens the store's <strong>public sale page</strong> in a browser window right inside the App, so you can shop without losing your place. Tap <strong>Done</strong> to return to your card. Your card details are never shared when you do this.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Where do the deals come from?</summary>
+    <div class="ans">
+      <p>They come from each store's own public website. The App checks the store's live sale page and, when that isn't available, falls back to a known current promotion. Deals refresh periodically, so what you see reflects the store's current offers.</p>
+    </div>
+  </details>
+
+  <h2 class="sec">Receipts</h2>
+
+  <details>
+    <summary>How do I add a receipt?</summary>
+    <div class="ans">
+      <p>Tap the <strong>＋</strong> button and choose <strong>Add Receipt</strong>, or swipe to the Receipts page and add one there. Each receipt shows the store's brand mark so your history is easy to scan at a glance.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I find an old receipt?</summary>
+    <div class="ans">
+      <p>Open the Receipts page and use the <strong>search</strong> field at the top to filter by store. Tap the keyboard's down-chevron, tap the list, or swipe to another page to dismiss the keyboard when you're done.</p>
+    </div>
+  </details>
+
+  <h2 class="sec">Backup &amp; settings</h2>
+
+  <details>
+    <summary>Are my cards backed up? What happens if I get a new phone?</summary>
+    <div class="ans">
+      <p>If you have iCloud enabled, your cards, coupons, and receipts sync through <strong>your own private iCloud</strong>. Sign in with the same Apple Account on a new device and your wallet restores automatically. This data lives in your iCloud account — we can't see it.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I manage iCloud backup and permissions?</summary>
+    <div class="ans">
+      <p>Open the App's <strong>Settings</strong> to manage iCloud backup for your wallet. Camera and location permissions are controlled in the iOS <strong>Settings</strong> app under <strong>Berry Shops</strong>, or under <strong>Privacy &amp; Security</strong>.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What is "Nearby" and why does it ask for my location?</summary>
+    <div class="ans">
+      <p>Nearby surfaces the cards for stores that are close to you, so the right card is ready when you walk in. It uses your location <strong>on your device</strong> to match your own cards — your location is never sent to us or shared. Turn it off anytime in <strong>Settings → Privacy &amp; Security → Location Services</strong>.</p>
+    </div>
+  </details>
+
+  <h2 class="sec">Privacy &amp; safety</h2>
+
+  <details>
+    <summary>Is my card and PIN information safe?</summary>
+    <div class="ans">
+      <p>Yes — the App is built so your card numbers and PINs stay on your device and, when you enable iCloud, are protected within your own iCloud account. We don't run a server that stores your cards, so there's no central database of them. See the <a class="link" href="privacy-policy.html">Privacy Policy</a> for details.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I delete a card, receipt, or all my data?</summary>
+    <div class="ans">
+      <p>Open an item and choose delete to remove it. Deleting the App removes its data from that device; anything in iCloud follows your iCloud settings. Because we don't hold your data on our servers, deleting it in the App and from iCloud removes it.</p>
+    </div>
+  </details>
+
+  <h2 class="sec">Still need help?</h2>
+
+  <details>
+    <summary>I have a different question or found a bug.</summary>
+    <div class="ans">
+      <p>Email <a class="link" href="mailto:support@berry-shops.com">support@berry-shops.com</a> with your device model and iOS version and a short description. Screenshots help. We read every message.</p>
+    </div>
+  </details>
+
+  <footer>
+    © 2026 Berry Shops LLC, California, USA ·
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>

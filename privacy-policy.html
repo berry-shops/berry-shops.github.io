@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Berry Shops</title>
+<style>
+  :root{
+    --bg:#f4f8f8; --surface:#ffffff;
+    --ink:#182223; --muted:#586468; --faint:#8b979b;
+    --line:#e4ebec; --line-strong:#d0dadb;
+    --accent:#0e93b8; --accent-deep:#0a7495; --accent-soft:#e6f4f8;
+    --radius:14px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --bg:#0d1415; --surface:#141d1f; --ink:#e7eff0; --muted:#98a6aa; --faint:#6c7a7e;
+      --line:#233032; --line-strong:#314245; --accent:#37c1e4; --accent-deep:#79d7f1; --accent-soft:#123039;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0d1415; --surface:#141d1f; --ink:#e7eff0; --muted:#98a6aa; --faint:#6c7a7e;
+    --line:#233032; --line-strong:#314245; --accent:#37c1e4; --accent-deep:#79d7f1; --accent-soft:#123039;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:720px; margin:0 auto; padding:0 22px 88px}
+  header{padding:52px 0 24px; border-bottom:1px solid var(--line); margin-bottom:8px}
+  .eyebrow{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12px;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--accent-deep); font-weight:600; margin:0 0 12px}
+  h1{font-size:clamp(28px,5vw,36px); letter-spacing:-.02em; margin:0 0 10px; font-weight:800; text-wrap:balance}
+  .dates{color:var(--muted); font-size:14px; margin:0}
+  .intro{font-size:17px; color:var(--muted); margin:26px 0 10px}
+  .intro b{color:var(--ink)}
+  .tldr{background:var(--accent-soft); border:1px solid var(--line-strong); border-radius:var(--radius);
+    padding:18px 20px; margin:22px 0 8px}
+  .tldr h2{margin:0 0 8px; font-size:14px; letter-spacing:.05em; text-transform:uppercase; color:var(--accent-deep)}
+  .tldr ul{margin:0; padding-left:18px}
+  .tldr li{margin:5px 0}
+  h2.sec{font-size:21px; letter-spacing:-.01em; margin:40px 0 6px; font-weight:750; text-wrap:balance}
+  h3{font-size:16px; margin:22px 0 4px; font-weight:700}
+  p{margin:10px 0}
+  ul.body{margin:10px 0; padding-left:20px}
+  ul.body li{margin:7px 0}
+  a{color:var(--accent-deep); text-decoration:none; border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent)}
+  a:hover{border-bottom-color:var(--accent)}
+  strong{font-weight:700}
+  .callout{border-left:3px solid var(--accent); background:var(--surface); border:1px solid var(--line);
+    border-left-width:3px; border-radius:0 10px 10px 0; padding:14px 16px; margin:16px 0; font-size:15px}
+  footer{margin-top:48px; padding-top:22px; border-top:1px solid var(--line); color:var(--faint); font-size:13px}
+  footer a{color:var(--accent-deep)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Berry Shops · Privacy</p>
+    <h1>Privacy Policy</h1>
+    <p class="dates">Effective September 4, 2026 · Last updated September 4, 2026</p>
+  </header>
+
+  <p class="intro">
+    Berry Shops ("the App") is a personal wallet for gift cards, coupons, and
+    receipts, published by <b>Berry Shops LLC</b> ("we," "us"). This policy
+    explains what the App handles, where that information lives, and the choices you have. The short
+    version: <b>the App is built so your information stays on your device and in your own private
+    iCloud — we do not run a server that collects it.</b>
+  </p>
+
+  <div class="tldr">
+    <h2>The short version</h2>
+    <ul>
+      <li>We don't require an account, and we don't ask for your name, email, or password.</li>
+      <li>Your gift cards, coupons, and receipts are stored <strong>on your device</strong> and synced only through <strong>your own private iCloud</strong>, which we cannot access.</li>
+      <li>The camera and your location are used <strong>on the device</strong> for scanning and the "Nearby" feature — that data is not sent to us.</li>
+      <li>We show no ads and use no analytics or tracking SDKs.</li>
+      <li>Delete a card, or delete the App, and its data is gone from that device.</li>
+    </ul>
+  </div>
+
+  <h2 class="sec">Information the App handles</h2>
+  <p>Because there is no sign-in, the App never receives personal identifiers like your name or email. It does work with the content <strong>you choose to add</strong>:</p>
+  <ul class="body">
+    <li><strong>Gift card &amp; coupon details</strong> you enter or scan — such as the store, card number, PIN, balance, and expiration.</li>
+    <li><strong>Receipts</strong> you add, including any photo or details you attach.</li>
+    <li><strong>Notes and labels</strong> you type.</li>
+  </ul>
+  <p>This information is stored <strong>locally on your device</strong>. If you have iCloud enabled, it also syncs through <strong>your own private iCloud account</strong> (Apple's CloudKit and iCloud Key-Value storage) so your cards survive a reinstall or move to a new device. This data lives in your personal iCloud container tied to your Apple Account — <strong>we have no access to it and cannot read it.</strong></p>
+
+  <h3>Camera</h3>
+  <p>When you scan a card, barcode, QR code, or receipt, the App uses your camera and on-device text recognition to read the information. Image processing happens <strong>on your device</strong>; scans are not uploaded to us.</p>
+
+  <h3>Location</h3>
+  <p>If you enable it, the App uses your location to power the <strong>"Nearby"</strong> feature — surfacing cards for stores close to you — and may check your location in the background to keep that list current. Your location is used <strong>on the device</strong> to sort and match your own cards. <strong>It is not transmitted to us or sold.</strong> You can turn location access off at any time in <em>Settings → Privacy &amp; Security → Location Services</em>.</p>
+
+  <h2 class="sec">Services the App connects to</h2>
+  <p>The App does not send your personal card data anywhere. It does make a few network requests that do <strong>not</strong> include your personal information:</p>
+  <ul class="body">
+    <li><strong>Store logos</strong> — to show a store's brand mark, the App looks up publicly available logos from a third-party brand-asset provider. These requests contain the store's public web domain (e.g. "target.com"), <strong>never your card details.</strong></li>
+    <li><strong>Sale &amp; deals links</strong> — the App may load a store's public sale page to show current deals. This is the store's own public website; opening it is the same as visiting it in a browser.</li>
+    <li><strong>Apple iCloud</strong> — used only to sync your data within your own account, as described above.</li>
+  </ul>
+  <div class="callout">
+    <strong>Opening a store's website.</strong> When you tap a deal or a store link, you leave the App and visit that store's site, which has its own privacy practices. If we ever earn a referral commission on such links, that is arranged through the store or an affiliate network and does <strong>not</strong> involve sharing your card data.
+  </div>
+
+  <h2 class="sec">What we do not do</h2>
+  <ul class="body">
+    <li>We do <strong>not</strong> sell or rent your information.</li>
+    <li>We do <strong>not</strong> show advertising in the App.</li>
+    <li>We do <strong>not</strong> use third-party analytics, advertising, or tracking SDKs.</li>
+    <li>We do <strong>not</strong> track you across other apps or websites.</li>
+  </ul>
+
+  <h2 class="sec">Security</h2>
+  <p>Card numbers and PINs are sensitive, and the App is designed to keep them close to you: stored on your device and, when you enable iCloud, protected by Apple's iCloud security within your own account. No method of storage is perfectly secure, but because we don't collect this data on a server of our own, there is no central database of your cards for anyone to breach. Keep your device passcode and Apple Account secure, as those protect your data.</p>
+
+  <h2 class="sec">Children</h2>
+  <p>The App is not directed to children under 13, and we do not knowingly collect personal information from them.</p>
+
+  <h2 class="sec">Your choices &amp; rights</h2>
+  <ul class="body">
+    <li><strong>Delete data.</strong> Remove any card, coupon, or receipt within the App at any time. Deleting the App removes its data from that device; data in your iCloud follows your iCloud settings.</li>
+    <li><strong>Turn off permissions.</strong> Camera and location access can be revoked anytime in iOS Settings.</li>
+    <li><strong>Turn off iCloud sync</strong> in the App's settings or in your device's iCloud settings.</li>
+  </ul>
+  <p>Because we don't hold your personal data on our own servers, there is little for us to retrieve or delete on your behalf — but if you're a resident of California or another region with privacy rights (such as the CCPA/CPRA), you may still contact us with any request and we will respond as required by law.</p>
+
+  <h2 class="sec">Changes to this policy</h2>
+  <p>If we make material changes, we'll update the date at the top and, where appropriate, note it in the App. Continued use after an update means you accept the revised policy.</p>
+
+  <h2 class="sec">Contact us</h2>
+  <p>Questions about this policy or your privacy? Reach us at <a href="mailto:support@berry-shops.com">support@berry-shops.com</a>.</p>
+  <p>Berry Shops LLC<br>California, USA</p>
+
+  <footer>
+    © 2026 Berry Shops LLC. ·
+    <a href="support.html">Support</a>
+  </footer>
+</div>
+</body>
+</html>
